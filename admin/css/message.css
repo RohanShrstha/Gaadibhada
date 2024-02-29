@@ -1,0 +1,30 @@
+.container {
+    margin-left: 280px;
+    padding-top: 110px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: "98%";
+}
+
+td,
+th {
+    padding: 10px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #e1e1d0;
+    border: solid 0.5px grey;
+}
+
+td {
+    background-color: #ffffff;
+    border: solid 0.5px grey;
+}

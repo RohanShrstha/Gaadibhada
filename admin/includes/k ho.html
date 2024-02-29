@@ -1,0 +1,85 @@
+
+<html>
+	<head>
+		<title>Rent Vehicle</title>
+		<link href="../img/logo.png" rel="icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<style>
+			
+/* Sidebar Menu */
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 70px;
+    background-color: #292929e8;
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+
+i {
+    padding: 0px 10px;
+    color: #9d9d9d;
+}
+
+.main {
+    padding: 12px 0px 18px 25px;
+    color: #9d9d9d;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.sidenav a,
+.dropdown-btn {
+    padding: 12px 10px 16px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition-timing-function: ease;
+}
+
+.active {
+    background-color: #262626;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #585656a0;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+		</style>
+	</head>
+	<body>
+	
+
+	<div class="sidenav">
+		<p class="main">Main</p>
+		<a href="dashboard.php"><i class="fas fa-table"></i>Dashboard</a>
+		<button class="dropdown-btn"><i class="far fa-clone"></i>Brands <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<a href="createbrand.php">Create Brand</a>
+			<a href="managebrand.php">Manage Brands</a>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

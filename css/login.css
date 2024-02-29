@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../images/pictures/bg.jpg");
+    background-size: auto;
+    width: 100%;
+    position: fixed;
+}
+
+.boom {
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 30px 30px rgba(0, 0, 5, 15);
+    perspective: 2700px;
+    border-radius: 30px;
+}
+
+.container .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+
+.container .cover .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container .cover img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form {
+    width: calc(100% / 2 - 25px);
+}
+
+.forms .form-content .title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-content .input-box i {
+    position: absolute;
+    font-size: 17px;
+}
+
+.forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.forms .form-content .forgot {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+.forms .form-content .forgot:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.forms .form-content .button input {
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+    background: #5b13b9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.forms .form-content a {
+    color: #5b13b9;
+    cursor: pointer;
+}
+
+.forms .form-content a:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text {
+    text-align: center;
+    margin-top: 25px;
+}

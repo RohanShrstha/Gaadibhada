@@ -1,0 +1,57 @@
+.cover {
+    position: relative;
+}
+
+.profilepic {
+    position: relative;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    margin: -12% 0 0 15%;
+    background-color: aqua;
+}
+
+.container {
+    height: 450px;
+    padding: 10px 250px;
+}
+
+.buttonloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: -360px -8% 0 50%;
+}
+
+.buttonloc .button {
+    background: #7d2ae8;
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+    width: 300px;
+}
+
+.buttonloc .button:hover {
+    background: #5b13b9;
+}
+
+.details h2 {
+    font-size: 30px;
+    margin: 0 auto 10px;
+    text-decoration: underline;
+}
+
+.details p {
+    margin-bottom: 1px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.upperdetail p {
+    font-size: 25px;
+    font-weight: bold;
+}

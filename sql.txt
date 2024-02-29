@@ -1,0 +1,169 @@
+create database gaadibhada;
+
+create TABLE tbl_brand0(
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(20) not null,
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+IINSERT INTO tbl_brand0(name) VALUES("TATA");
+INSERT INTO tbl_brand0(name) VALUES("Nissan");
+INSERT INTO tbl_brand0(name) VALUES("Mahindra");
+INSERT INTO tbl_brand0(name) VALUES("Maruti");
+
+create TABLE tbl_brand1(
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(20) not null,
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+
+INSERT INTO tbl_brand1(name) VALUES("Bajaj");
+INSERT INTO tbl_brand1(name) VALUES("TVS");
+INSERT INTO tbl_brand1(name) VALUES("Hero");
+INSERT INTO tbl_brand1(name) VALUES("Honda"); 
+
+create TABLE tbl_type0(
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(20) not null,
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+INSERT INTO tbl_type0(name) VALUES("Car");
+INSERT INTO tbl_type0(name) VALUES("Bus");
+INSERT INTO tbl_type0(name) VALUES("Jeep");
+INSERT INTO tbl_type0(name) VALUES("Van");
+INSERT INTO tbl_type0(name) VALUES("Pickup truck");
+
+create TABLE tbl_type1(
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(20) not null,
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+INSERT INTO tbl_type1(name) VALUES("Standard");
+INSERT INTO tbl_type1(name) VALUES("Cruiser");
+INSERT INTO tbl_type1(name) VALUES("Scooter");
+INSERT INTO tbl_type1(name) VALUES("Dirt");
+INSERT INTO tbl_type1(name) VALUES("Sport");
+
+CREATE TABLE tbl_features0(
+    id int not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null ON UPDATE CURRENT_TIMESTAMP
+    );
+INSERT INTO tbl_features0(name) VALUES('A/C');
+INSERT INTO tbl_features0(name) VALUES('Leather Seats');
+INSERT INTO tbl_features0(name) VALUES('Back Camera');
+INSERT INTO tbl_features0(name) VALUES('Navigation System');
+INSERT INTO tbl_features0(name) VALUES('Bluetooth');
+INSERT INTO tbl_features0(name) VALUES('Remote Start');
+INSERT INTO tbl_features0(name) VALUES('ABS (Antilock Braking System)');
+INSERT INTO tbl_features0(name) VALUES('Andriod auto');
+
+CREATE TABLE tbl_features1(
+    id int not null AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null ON UPDATE CURRENT_TIMESTAMP
+    );
+
+    INSERT INTO tbl_features1(name) VALUES('ABS (AntiLock Braking System)');
+INSERT INTO tbl_features1(name) VALUES('Adjustible Suspension');
+INSERT INTO tbl_features1(name) VALUES('Bluetooth');
+INSERT INTO tbl_features1(name) VALUES('Crash Protection Accessories');
+INSERT INTO tbl_features1(name) VALUES('Dual-channel ABS');
+INSERT INTO tbl_features1(name) VALUES('Hazard Light');
+INSERT INTO tbl_features1(name) VALUES('Liquid Cooling');
+INSERT INTO tbl_features1(name) VALUES('Navigation System');
+INSERT INTO tbl_features1(name) VALUES('Rear Lift Prevention');
+INSERT INTO tbl_features1(name) VALUES('Remote Start');
+
+create table tbl_fourWheelers
+(
+    id int(11) not null AUTO_INCREMENT PRIMARY key,
+    title varchar(100) not null,
+    category varchar(15) not null,
+    brand varchar(15) not null,
+    type varchar(15) not null,
+    description varchar(200) not null,
+    makeyear int not null,
+    engine int not null,
+    transmission varchar(12) not null,
+    fuel varchar(10) not null,
+    mileage int not null,
+    doors int not null,
+    seats int not null,
+    features varchar(100),
+    price float not null,
+    selfdrive int  not null,
+    img1 varchar(50),
+    img2 varchar(50),
+    img3 varchar(50),
+    img4 varchar(50),
+    billbookd varchar(50),
+    insuranced varchar(50),
+    status varchar(10) default 'Pending',
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+
+create table tbl_twoWheelers
+(
+    id int(11) not null AUTO_INCREMENT PRIMARY key,
+    title varchar(100) not null,
+    category varchar(15) not null,
+    brand varchar(15) not null,
+    type varchar(15) not null,
+    description varchar(200) not null,
+    makeyear int not null,
+    engine int not null,
+    transmission varchar(12) not null,
+    fuel varchar(10) not null,
+    mileage int not null,
+    features varchar(100),
+    price float not null,
+    img1 varchar(50),
+    img2 varchar(50),
+    img3 varchar(50),
+    img4 varchar(50),
+    billbookd varchar(50),
+    insuranced varchar(50),
+    status varchar(10) default 'Pending',
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    updatedate timestamp null DEFAULT null on update CURRENT_TIMESTAMP
+    );
+
+
+    CREATE TABLE tbl_reserve(
+    id int not null AUTO_INCREMENT PRIMARY KEY,
+    customersid int not null,
+    suppliersid int not null,
+    vehicleid int not null,
+    category varchar(15) not null,
+    sdate date not null,
+    stime time not null,
+    edate date not null,
+    etime time not null,
+    location varchar(100) not null,
+    driveoption int not null,
+    message varchar(200)
+    );
+
+    CREATE TABLE tbl_payment(
+    id int not null AUTO_INCREMENT,
+    cid int not null,
+    sid int not null,
+    vid int not null,
+    vcategory varchar(12) not null,
+    totalcost float not null,
+    ptype varchar(12) not null,
+    createdate timestamp null DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id));
+    

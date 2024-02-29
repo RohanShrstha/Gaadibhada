@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+}
+
+body {
+    background-image: url("../images/pictures/bgwp.jpg");
+    position: fixed;
+}
+
+.container {
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-container {
+    width: 25%;
+    min-width: 300px;
+    padding: 20px 0px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 5, 15);
+    border-radius: 30px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    padding: 5px;
+    margin: 15px 0 0px;
+}
+
+.form {
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 38px;
+}
+
+.input-box {
+    width: 300px;
+    min-height: 40px;
+    margin: 10px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+}
+
+.button input {
+    color: #fff;
+    background: #7d2ae8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 5px;
+}
+
+.button input:hover {
+    background: #5b13b9;
+}
+
+.form a {
+    color: #6117c2;
+    text-decoration: none;
+    padding: 0 90px;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.error,
+.msg {
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+
+.msg {
+    color: green;
+}
+
+.none {
+    display: none;
+}

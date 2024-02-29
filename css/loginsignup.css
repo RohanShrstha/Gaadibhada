@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/pictures/bg.jpg");
+    background-size: auto;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+    padding: 140px 518px 50px;
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 30px 30px rgba(0, 0, 5, 15);
+    perspective: 2700px;
+    border-radius: 30px;
+}
+
+.forms .form-content .title {
+    width: 100%;
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+form{
+    width: 100%;
+}
+
+.forms .form-content .input-box {
+    min-height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-content .input-box i {
+    position: absolute;
+    font-size: 17px;
+    top: 15px;
+}
+
+.forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.forms .form-content .forgot {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+.forms .form-content .forgot:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.forms .form-content .button input {
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+    background: #5b13b9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.forms .form-content a {
+    color: #5b13b9;
+    cursor: pointer;
+}
+
+.forms .form-content a:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text {
+    text-align: center;
+    margin-top: 25px;
+}
+.msg{
+    width: 100%;
+    height: auto;
+}
+.error{
+    width: 100%;
+    height:  auto;
+    text-align: center;
+    font-style: italic;
+    color:  red;
+}
+.success{
+    display: none;
+}
+.errormsg{
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    top: 12vh;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(255,0,0,0.5);
+}
+.successmsg{
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    top: 12vh;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(0,255,0,0.5);
+}
+.message{
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    top: 12vh;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(241, 182, 4, 0.5);
+}

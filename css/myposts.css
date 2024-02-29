@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-content{
+    width: 85vw;
+    height: auto;
+    min-height: 80vh;
+}
+.caption, .pagenavigation{
+    width: 100%;
+    height: 5vh;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+.item-container{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 33.33%;
+    height: 50vh;
+    padding: 0.33rem;
+    box-sizing: border-box;
+}
+.item-card{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: 2px 2px gray;
+    border-radius: 10px;
+}
+.image{
+    width: 100%;
+    height: 70%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.description{
+    width: 100%;
+    height: 30%;
+}
+.title{
+    width: 100%;
+    height: 4vh;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.info{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.brand, .price{
+    width: 200px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    height: 6vh;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+button:hover{
+    transform: scale(1.01);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.pagenavigation{
+    width: 100%;
+    height: 5vh;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+.header, .footer{
+    height: 11vh;
+    background-color: black;
+}

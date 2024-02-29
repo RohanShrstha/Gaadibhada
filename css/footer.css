@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    width: 100%;
+    position: static;
+    bottom: 0;
+    left: 0;
+    background: #292929;
+}
+
+footer .content {
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left .upper{
+    color: white;
+    line-height: 24px;
+}
+.content .right .upper .phone,.content .right .upper .email{
+    padding: 4px;
+}
+footer .content,
+.phone a, .email a, .media-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .content .box {
+    width: 33%;
+    transition: all 0.4s ease;
+}
+
+footer .content .topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+footer .content footer {
+    text-align: justify;
+    line-height: 21px;
+}
+
+footer .content .upper .topic {
+    margin: 0 0 14px 0;
+}
+
+footer .content .lower .topic {
+    margin: 24px 0 5px 0;
+}
+
+footer .content .lower i {
+    padding-right: 16px;
+}
+
+footer .content .right input[type="text"] {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+}
+
+
+.content .right input[type="submit"]:hover {
+    background-color: rgba(145, 96, 192, 0.564);
+}
+footer .content .media-icons{
+    margin: 5px 0px;
+}
+footer .content .media-icons a {
+    font-size: 20px;
+    height: 45px;
+    width: 52.9px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.content .media-icons a:hover {
+    border-color: blueviolet;
+    transform: scale(1.1);
+}
+
+footer .bottom {
+    width: 100%;
+    text-align: center;
+    color: #d9d9d9;
+    padding: 0px 0px 10px;
+}
+
+footer .bottom a {
+    color: blueviolet;
+}
+
+footer a:hover {
+    color: blueviolet;
+}
+.bottom .links a{
+    margin: 0px 5px;
+    font-size: 14px;
+    color: gray;
+}
+.bottom .links a:hover{
+    color: blueviolet;
+}

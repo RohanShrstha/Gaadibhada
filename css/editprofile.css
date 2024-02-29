@@ -1,0 +1,49 @@
+.cover {
+    position: relative;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.setting {
+    margin: 25px 0 0 25%;
+    font-size: 22px;
+}
+label{
+    margin: 10px 0px;
+}
+.field {
+    width: 60%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 2px solid rgba(169, 167, 167, 0.715);
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 130px;
+}
+
+.uploadpreview {
+    width: 60%;
+}
+
+form .button input {
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 6px;
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+    margin-bottom: 50px;
+}
+
+form .button input:hover {
+    background: #5b13b9;
+}

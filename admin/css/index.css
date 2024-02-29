@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.boom {
+    min-height: 100vh;
+    padding: 20px 528px;
+}
+.boom .optitle{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.boom .optitle .logo{
+    width: 100%;
+    height: 100%;
+}
+.boom .optitle .logo img{
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 40px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 5, 15);
+    perspective: 2700px;
+    border-radius: 30px;
+}
+
+.forms .form-content .title {
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-content .input-box i {
+    position: absolute;
+    font-size: 17px;
+}
+
+.forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.forms .form-content .button input {
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+    background: #5b13b9;
+}

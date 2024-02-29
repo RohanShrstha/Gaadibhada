@@ -1,0 +1,50 @@
+.container {
+    margin-left: 280px;
+    padding-top: 110px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.big-diagram {
+    height: 380px;
+    width: 1220px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-diagram {
+    height: 155px;
+    width: 280px;
+    margin: 0px 12px;
+    text-align: center;
+}
+
+.small-diagram h2 {
+    margin-top: 22px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.small-diagram p {
+    margin: 0 0 15px;
+}
+
+.small-diagram a {
+    background-color: rgb(134, 133, 133);
+    width: 280px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 85.5px;
+}
+
+.small-diagram i {
+    color: white;
+    margin-left: -5px;
+}
+
+.small-diagram a:hover {
+    background-color: rgb(113, 110, 110);
+}

@@ -1,0 +1,136 @@
+.about {
+    position: relative;
+}
+
+.text {
+    color: #262626;
+    font-size: 5vw;
+    font-weight: bold;
+    position: absolute;
+    left: 8%;
+    bottom: 8%;
+    width: 80%;
+    font-family: 'Caveat Brush', cursive;
+    text-shadow: 5px 5px 1px rgb(255, 255, 255);
+}
+
+.form-container {
+    max-width: 88%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    padding-left: 5%;
+}
+
+.container {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #050505;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+
+span {
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.input-box {
+    padding-top: 10px;
+}
+
+.input-box i {
+    padding: 5px 25px;
+    font-size: 22px;
+    color: #262626;
+}
+
+.input-box i:hover {
+    color: blueviolet;
+}
+
+.social-links{
+    padding: 0px 16px;
+}
+.social-links i {
+    padding: 20px 5px;
+    font-size: 30px;
+    color: #262626;
+}
+
+.social-links i:hover {
+    transform: scale(1.5);
+    color: blueviolet;
+}
+
+.complain-form {
+    align-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex: 2;
+    padding-left: 12%;
+}
+
+form i {
+    font-size: 14.8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 92, 92);
+    padding: 12px;
+}
+
+.comment i {
+    float: left;
+    padding-bottom: 104px;
+}
+
+.field {
+    width: 75%;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    border: 2px solid rgb(71, 71, 71);
+}
+
+.field:hover {
+    background-color: rgba(148, 148, 148, 0.329);
+}
+
+textarea {
+    min-height: 130px;
+}
+
+.btn {
+    width: 81%;
+    padding: 0.5rem 1rem;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+.field:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+}
